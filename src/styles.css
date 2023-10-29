@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #e8e8e8;
+  color: #f8ffd0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  background-color: #230312;
+  background-color: #a0ad8d;
 }
 
 .img-fluid{
@@ -43,13 +43,13 @@ p {
 
 a {
   cursor: pointer;
-  color: #e8e8e8;
+  color: #e3ecaa;
   text-decoration: none;
 }
 
 a:hover {
   font-weight: bold;
-  color: #e8e8e8;
+  color: #c3cd79;
 }
 
 /* Input */
@@ -59,7 +59,7 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #e3ecaa;
 }
 
 label {
@@ -81,6 +81,7 @@ label {
 }
 
 .row-wrap{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
@@ -99,7 +100,8 @@ label {
   border-radius: 2px;
   padding: 8px;
   margin: 10px;
-  background-color: #343434;
+  background-color: #5c6354;
+  border: 0px;
 }
 .card-img{
   width: 100%;
@@ -115,12 +117,11 @@ label {
   height: auto;
   padding: 8px 0px 0px;
   text-align: center;
-  color: #e8e8e8;
 }
 .card-body p{
   font-size: 18px;
   font-weight: bold;
-  color: #e8e8e8;
+  color: #e3ecaa;
 }
 
 .card *{ /* Tutto cio che e dentro card avra margin 0 */
@@ -135,14 +136,14 @@ top-bar{
   flex-direction: row;
   justify-content: space-between;
   border-radius: 40px;
-  background-color: #a64800;
+  background-color: #5c6354;
   padding: 16px;
   align-items: center;
   margin: 16px 0px 0px 0px;
 }
 
 top-bar h1 , ul li a{
-  color: #e8e8e8;
+  color: #e3ecaa;
   margin: 0;
 }
 
@@ -220,7 +221,7 @@ app-dettaglio .row-wrap img{
     justify-content: center;
   }
   .card{
-    width: 30%;
+    width: 20%;
     height: auto;
   }
 }
