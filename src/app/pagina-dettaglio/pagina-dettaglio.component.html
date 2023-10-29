@@ -1,0 +1,69 @@
+<div class="container" *ngFor="let drink of drinks">
+    <div class="row row-sm-column">
+        <div class="col-sm-8 col-4">
+            <h1> {{ drink.strDrink }}</h1>
+            <img class="img-fluid" [src]="drink.strDrinkThumb" alt="">
+        </div>
+        <div class="col-sm-12 col-8">
+            <h2>Ingredienti</h2>
+            <div class="row-wrap">
+                <div class="col-4" *ngIf="drink.strIngredient1 != null">
+                    <img class="img-fluid"
+                        src="https://www.thecocktaildb.com/images/ingredients/Coconut%20rum-Medium.png" alt="">
+                    <p>{{ drink.strIngredient1 }} <strong>{{ drink.strMeasure1 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient2 != null">
+                    <img class="img-fluid" src="https://www.thecocktaildb.com/images/ingredients/Amaretto-Medium.png"
+                        alt="">
+                    <p>{{ drink.strIngredient2 }} <strong>{{ drink.strMeasure2 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient3 != null">
+                    <img class="img-fluid"
+                        src="https://www.thecocktaildb.com/images/ingredients/Orange%20juice-Medium.png" alt="">
+                    <p>{{ drink.strIngredient3 }} <strong>{{ drink.strMeasure3 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient4 != null">
+                    <img class="img-fluid" src="https://www.thecocktaildb.com/images/ingredients/Grenadine-Medium.png"
+                        alt="">
+                    <p>{{ drink.strIngredient4 }} <strong>{{ drink.strMeasure4 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient5 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient5 }} <strong>{{ drink.strMeasure5 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient6 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient6 }} <strong>{{ drink.strMeasure6 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient7 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient7 }} <strong>{{ drink.strMeasure7 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient8 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient8 }} <strong>{{ drink.strMeasure8 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient9 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient9 }} <strong>{{ drink.strMeasure9 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient10 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient10 }} <strong>{{ drink.strMeasure10 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient11 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient11 }} <strong>{{ drink.strMeasure11 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient12 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient12 }} <strong>{{ drink.strMeasure12 }}</strong></p>
+                </div>
+                <div class="col-4" *ngIf="drink.strIngredient13 != null">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="">
+                    <p>{{ drink.strIngredient13 }} <strong>{{ drink.strMeasure13 }}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

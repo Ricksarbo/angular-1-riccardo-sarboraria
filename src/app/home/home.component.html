@@ -1,0 +1,13 @@
+<div class="container">
+    <ul class="row-wrap">
+        <li class="card" *ngFor="let drink of drinks">
+            <div class="card-head"></div>
+            <a href="dettaglio">
+                <img class="card-img" [src]="drink.strDrinkThumb" alt="">
+            </a>
+            <div class="card-body">
+                <p> {{ drink.strDrink }} </p>
+            </div>
+        </li>
+    </ul>
+</div>
