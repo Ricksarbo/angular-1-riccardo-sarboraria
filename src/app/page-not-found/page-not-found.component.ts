@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ApiService } from '../_service/api.service';
 
 @Component({
   selector: 'page-not-found',
@@ -6,7 +7,5 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PageNotFound{
-  constructor(){
-
-  }
+  constructor( private apiService: ApiService){ }
 }
