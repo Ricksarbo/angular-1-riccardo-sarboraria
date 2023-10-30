@@ -17,4 +17,8 @@ export class ApiService {
     searchByLetter(letter: string){
         return this.http.get(this.baseUrl + 'search.php?f=' + letter);
     }
+
+    searchCocktailByClick(idDrink: string){
+        return this.http.get(this.baseUrl + 'search.php?f=' + idDrink);
+    }
 }

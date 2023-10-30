@@ -18,5 +18,4 @@ export class DettaglioComponent implements OnInit {
         this.drinks = response.drinks;
     });
   }
-
 }
