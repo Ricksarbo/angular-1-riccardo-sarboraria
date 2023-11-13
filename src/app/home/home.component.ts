@@ -13,10 +13,8 @@ export class HomeComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.searchByLetter("a")
-    .subscribe( (response: any) => {
-          console.log(response);
-          this.drinks = response.drinks;
-        });
+    this.apiService.getElencoDrinks('a').subscribe( (drinks) => {
+      this.drinks = drinks;
+    })
   }
 }

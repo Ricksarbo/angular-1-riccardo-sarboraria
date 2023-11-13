@@ -14,8 +14,15 @@ export class DettaglioComponent implements OnInit {
   ngOnInit() {
     const observable = this.http.get('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15200')
     observable.subscribe( (response: any) => {
-        console.log(response);
         this.drinks = response.drinks;
+        // this.drink = this.drinks[0];
     });
   }
+
+  // salva(){
+  //   this.http.post('URL_SALVATAGGIO', this.drink)
+  //   .subscribe( (response: any) => {
+
+  //   })
+  // }
 }

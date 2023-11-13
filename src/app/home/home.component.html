@@ -2,7 +2,7 @@
     <ul class="row-wrap">
         <li class="card" *ngFor="let drink of drinks">
             <div class="card-head"></div>
-            <a href="dettaglio">
+            <a routerLink="dettaglio" [routerLink]="'/dettaglio/' + drink.idDrink">
                 <img class="card-img" [src]="drink.strDrinkThumb" alt="">
             </a>
             <div class="card-body">
